@@ -15,23 +15,6 @@ var channel = "515539787042521116";//ايدي الروم
 
 
 
-client.on('ready', async() => {
-var server = "512922467417718784"; // ايدي السررفر
-var channel = "513749789436018688";//ايدي الروم
-    setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send('#daily')
-    },8.64e+7);
-})
-
-client.on('ready', async() => {
-var server = "512922467417718784"; // ايدي السررفر
-var channel = "513749789436018688";//ايدي الروم
-    setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send('#rep <@306464381775118336>')
-    },8.64e+7);
-})
-
-
 client.on('message', message => {
 if(message.content.startsWith('3s')) {
 if(message.author.id !== "502474928466165760") return;
